@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragments.OvalWatermelonFragment">
+
+    <TextView
+        android:id="@+id/text_view_test_oval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginEnd="@dimen/marginStartEnd"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/text_view_review_oval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        tools:text="РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginEnd="@dimen/marginStartEnd"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_draw"
+        android:padding="16dp"
+        android:theme="@style/myEditText">
+
+        <EditText
+            android:id="@+id/edit_text_bl_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Длина большого экватора арбузаа, см"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="14sp"
+            android:theme="@style/myEditText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginEnd="@dimen/marginStartEnd"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_draw"
+        android:padding="16dp"
+        android:theme="@style/myEditText">
+
+        <EditText
+            android:id="@+id/edit_text_sl_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Длина малого экватора арбузаа, см"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="14sp"
+            android:theme="@style/myEditText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_review_oval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/btn_draw"
+        android:padding="16dp"
+        android:text="Наше мнение"
+        android:textColor="#fff" />
+
+</LinearLayout>
