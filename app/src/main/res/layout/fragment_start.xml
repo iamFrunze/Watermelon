@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bckg_start_screen"
-    android:gravity="center"
+    android:background="@drawable/background"
+    android:gravity="top"
     android:orientation="vertical"
     tools:context=".fragments.StartFragment">
 
@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/marginStartEnd"
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_draw"
@@ -45,6 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/btn_draw"
+            android:elevation="6dp"
             android:text="Круглый арбуз"
             android:textColor="#fff" />
 
@@ -55,7 +57,16 @@
             android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:background="@drawable/btn_draw"
+            android:elevation="6dp"
             android:text="Продолговатый арбуз"
             android:textColor="#fff" />
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/start" />
 </LinearLayout>

@@ -1,18 +1,11 @@
 package com.byfrunze.watermelon.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.NavigationUI.navigateUp
 import com.byfrunze.watermelon.R
-import com.byfrunze.watermelon.data.tableL
-import com.byfrunze.watermelon.data.tableM
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_start.*
 
 

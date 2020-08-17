@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@drawable/background"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".fragments.OvalWatermelonFragment">
 
-    <TextView
-        android:id="@+id/text_view_test_oval"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStartEnd"
-        android:layout_marginEnd="@dimen/marginStartEnd"
-        android:textAlignment="center" />
-
-    <TextView
-        android:id="@+id/text_view_review_oval"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="24sp"
-        tools:text="РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/marginStartEnd"
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_draw"
@@ -79,5 +65,39 @@
         android:padding="16dp"
         android:text="Наше мнение"
         android:textColor="#fff" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/selectableItemBackground"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp">
+
+        <TextView
+            android:id="@+id/text_view_review_oval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="24sp"
+            tools:text="РЕЗУЛЬТАТ ВЫЧИСЛЕНИЙ" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/image_view_oval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/start" />
+
 
 </LinearLayout>
