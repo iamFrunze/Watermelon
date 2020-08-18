@@ -20,9 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="32dp"
-        android:backgroundTint="@color/watermelon"
+        android:backgroundTint="#fff"
         android:elevation="6dp"
-        android:src="@drawable/ic_baseline_error_outline_24"
+        android:src="@drawable/ic_faq"
         app:fabSize="normal"
         app:rippleColor="@color/watermelon" />
 </FrameLayout>

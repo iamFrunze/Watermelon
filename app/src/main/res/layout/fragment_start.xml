@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Вес арбуза, кг"
+            android:maxLength="3"
             android:textColor="#fff"
             android:textColorHint="#fff"
             android:theme="@style/myEditText" />
@@ -69,4 +70,14 @@
         android:layout_marginBottom="16dp"
         android:adjustViewBounds="true"
         android:src="@drawable/start" />
+
+    <Button
+        android:id="@+id/btn_service_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/btn_draw"
+        android:elevation="6dp"
+        android:text="Измерить уровень здоровья"
+        android:textColor="#fff" />
 </LinearLayout>

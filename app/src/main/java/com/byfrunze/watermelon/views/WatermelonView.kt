@@ -6,6 +6,5 @@ import moxy.viewstate.strategy.StateStrategyType
 
 @StateStrategyType(value = AddToEndSingleStrategy::class)
 interface WatermelonView : MvpView {
-    fun changeText(text: String)
-    fun chaneImage(id: Int)
+    fun startReviewFragment(text: String, imageId: Int)
 }

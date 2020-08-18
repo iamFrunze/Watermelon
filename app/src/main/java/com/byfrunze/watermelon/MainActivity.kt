@@ -22,7 +22,7 @@ class MainActivity : FragmentActivity() {
                             "Эффективность метода 91,7%."
                 )
                 .setPositiveButton(
-                    "Я понял"
+                    "Я понял(a)"
                 ) { dialog, _ -> dialog?.dismiss() }
                 .show()
 

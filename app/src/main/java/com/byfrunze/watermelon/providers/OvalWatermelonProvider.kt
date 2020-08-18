@@ -1,5 +1,6 @@
 package com.byfrunze.watermelon.providers
 
+import android.util.Log
 import com.byfrunze.watermelon.data.tableL
 import com.byfrunze.watermelon.presenters.OvalWatermelonPresenter
 import com.byfrunze.watermelon.utils.Images.*
@@ -38,7 +39,13 @@ class OvalWatermelonProvider(private val presenter: OvalWatermelonPresenter) {
             presenter.answer(text = "Введите корректные значения", imageId = DEFAULT.id)
             return
         }
+
+
         val L = tableL[indexOfL]
+
+        Log.i("RESULT", "1 $L - L\n" +
+                " $minV - minV \n" +
+                " $indexOfL - indexOfL")
 
         when {
             L < 45 -> {
@@ -49,7 +56,7 @@ class OvalWatermelonProvider(private val presenter: OvalWatermelonPresenter) {
                 return
             }
 
-            L > 45 -> {
+            L > 99 -> {
                 presenter.answer(
                     text = "О-О! Такой большой! Зачем он тебе? Этот арбуз что с детства лечили!",
                     imageId = UNDER.id
@@ -63,6 +70,9 @@ class OvalWatermelonProvider(private val presenter: OvalWatermelonPresenter) {
 
         val goodWeightMinus = mCircleMap[L]?.minus(percent)
         val goodWeightPlus = mCircleMap[L]?.plus(percent)
+
+        Log.i("RESULT", "$L - L \n $minV - minV \n $indexOfL - indexOfL \n " +
+                "$perfectWeight - perfect weight")
 
         when {
             (weight!! > goodWeightMinus!!) && (weight < goodWeightPlus!!) -> {

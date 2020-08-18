@@ -1,7 +1,11 @@
 package com.byfrunze.watermelon.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
+import android.webkit.WebResourceRequest
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -11,12 +15,19 @@ import kotlinx.android.synthetic.main.fragment_start.*
 
 class StartFragment : Fragment(R.layout.fragment_start) {
 
+    val STORAGE_NAME = "SETTINGS"
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
         btn_circle_watermelon.setOnClickListener {
             val weight = edit_text_m.text.toString()
-
+            val settings = requireContext().getSharedPreferences(STORAGE_NAME, Context.MODE_PRIVATE)
+            val editor = settings.edit()
+            editor.putString("weight", weight)
+            editor.apply()
             if (weight.matches("^\\d+(\\.\\d+)*\$+".toRegex())) {
                 val bundle = Bundle()
                 bundle.putFloat("weight", weight.toFloat())
@@ -28,7 +39,10 @@ class StartFragment : Fragment(R.layout.fragment_start) {
 
         btn_oval_watermelon.setOnClickListener {
             val weight = edit_text_m.text.toString()
-
+            val settings = requireContext().getSharedPreferences(STORAGE_NAME, Context.MODE_PRIVATE)
+            val editor = settings.edit()
+            editor.putString("weight", weight)
+            editor.apply()
             if (weight.matches("^\\d+(\\.\\d+)*\$+".toRegex())) {
                 val bundle = Bundle()
                 bundle.putFloat("weight", weight.toFloat())
@@ -38,7 +52,11 @@ class StartFragment : Fragment(R.layout.fragment_start) {
                     .show()
         }
 
+        btn_service_start.setOnClickListener {
+            findNavController().navigate(R.id.webInfo)
+
+        }
+
+
     }
-
-
 }

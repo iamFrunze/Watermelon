@@ -10,15 +10,8 @@ class CircleWatermelonPresenter : MvpPresenter<WatermelonView>() {
     }
 
     fun answer(text: String, imageId: Int) {
-        textAnswer(text = text)
-        imageAnswer(id = imageId)
+        viewState.startReviewFragment(text = text, imageId = imageId)
     }
 
-    private fun textAnswer(text: String) {
-        viewState.changeText(text = text)
-    }
 
-    private fun imageAnswer(id: Int) {
-        viewState.chaneImage(id = id)
-    }
 }
