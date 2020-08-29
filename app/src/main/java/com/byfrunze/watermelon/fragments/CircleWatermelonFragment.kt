@@ -4,7 +4,6 @@ import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.core.content.res.ResourcesCompat
 import androidx.navigation.fragment.findNavController
 import com.byfrunze.watermelon.R
 import com.byfrunze.watermelon.presenters.CircleWatermelonPresenter
@@ -36,6 +35,8 @@ class CircleWatermelonFragment : MvpAppCompatFragment(R.layout.fragment_circle_w
             val l = edit_text_l.text.toString()
             presenter.loadResults(weight = weight?.toFloat(), l = l)
         }
+
+
     }
 
 

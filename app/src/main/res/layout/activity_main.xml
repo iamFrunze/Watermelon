@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.byfrunze.watermelon.MainActivity">
 
     <fragment
         android:id="@+id/container"
@@ -25,4 +25,13 @@
         android:src="@drawable/ic_faq"
         app:fabSize="normal"
         app:rippleColor="@color/watermelon" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_test_banner"/>
 </FrameLayout>

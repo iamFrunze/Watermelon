@@ -1,7 +1,6 @@
 package com.byfrunze.watermelon.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.core.content.res.ResourcesCompat
 import androidx.navigation.fragment.findNavController

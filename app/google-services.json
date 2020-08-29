@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "794082975595",
+    "firebase_url": "https://watermelon-c2ced.firebaseio.com",
+    "project_id": "watermelon-c2ced",
+    "storage_bucket": "watermelon-c2ced.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794082975595:android:6f2363fd59fdaaabfef62e",
+        "android_client_info": {
+          "package_name": "com.byfrunze.watermelon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794082975595-4950rui25pssub32b7es46d54ffm5blb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY_R4BnC548db6ZVybj1aZc9exhE_MGgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794082975595-4950rui25pssub32b7es46d54ffm5blb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
